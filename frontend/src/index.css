@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#chatBox {
+    width: 400px;
+    height: 500px;
+    box-shadow: 3px 3px 5px 5px rgba(0,0,0,0.7);
+    position: relative;
+}
+.messageScreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 400px;
+    height: 400px;
+    overflow-y: auto;
+}
+.typeScreen {
+    position: absolute;
+    display: flex;
+    top: 400px;
+    left: 0;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+}
+.typeScreen input {
+    height: 30px;
+    font-size: 16px;
+} 
+.typeScreen button {
+    height: 40px;
+    background-color: rgb(58, 182, 204);
+    color: #fff;
+    font-size: 21px;
+}
+output {
+    position: relative;
+}
+.output p {
+    max-width: 400px;
+    word-wrap:break-word;
+    font-size: 18px;
+    padding: 5px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 4px;
+}
+.output p em {
+    color: rgb(58, 182, 204);
+}
